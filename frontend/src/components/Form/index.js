@@ -28,7 +28,7 @@ export const Form = () => {
         handleSubmit
     } = handleForm({
         initialValues, onSubmit: values => {
-            const BASE_URL = "http://localhost:3000/magic"
+            const BASE_URL = "https://potion-planet.herokuapp.com/magic"
 
             values.total = adjustedTotal
 
