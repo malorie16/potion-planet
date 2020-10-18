@@ -43,7 +43,7 @@ Also, I anticipated a need for users to want to make more than one purchase at P
 
 The frontend uses React. I didn't have time to use much custom CSS so I used [Materialize](https://materializecss.com/) pretty heavily. I used babel to compile and webpack to bundle. Potion mixing can be dangerous which is why users can only buy one potion but I really wanted to give them options so I gave them a carousel 😬
 
-There's only 2 components: `App` and `Form`
+There're only 2 components: `App` and `Form`
 
 Originally, I pulled out the transaction into it's own component but I used a custom react hook that needed to pass state to each of the inputs at once so it all ended up livin in one file. If I had more time, this would be the first thing I'd refactor. Especially seeing as `fetch` is also used right in that file.
 
