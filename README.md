@@ -2,7 +2,7 @@
 
 ## Deployed site: https://potion-planet.firebaseapp.com/
 
-(Apologies if your first request takes a while to process, it's probably due to Heroku loading the backend)
+(Apologies if your first form submission takes a while to process, it's probably due to Heroku loading the backend)
 
 ![Alt Text](https://media.giphy.com/media/fpuoV5B2TkCvbcSdX2/giphy.gif)
 
