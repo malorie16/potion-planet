@@ -41,7 +41,7 @@ Also, I anticipated a need for users to want to make more than one purchase at P
 
 ## Frontend
 
-The frontend uses React. I didn't have time to use much custom CSS so I used [Materialize](https://materializecss.com/) pretty heavily. I used babel to compile and webpack to bundle.
+The frontend uses React. I didn't have time to use much custom CSS so I used [Materialize](https://materializecss.com/) pretty heavily. I used babel to compile and webpack to bundle. Potion mixing can be dangerous which is why users can only buy one potion but I really wanted to give them options so I gave them a carousel 😬
 
 There's only 2 components: `App` and `Form`
 
@@ -59,3 +59,4 @@ When the form is submitted, I run a validation on all of the fields to see if an
 - More test coverage on the backend (there are some added for the `TransactionsController`. See `spec/controllers/transactions_controller_spec.rb`)
 - Refactor `frontend/src/components/Form/index.js` to reflect a seperation of concerns (pull out the api call, make an input component that can be reusable since they're repeated a lot)
 - Use rails serializers to format the json because technically according to rails conventions, they don't belong in `ApplicatonController` (`app/controllers/application_controller.rb`). Serializers don't come with rails out of the box and I started looking into adding it but it started to become a time suck so I left it as is.
+- Fully integrate the `Potion` model so that end users can have options to choose from
