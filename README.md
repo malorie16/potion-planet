@@ -47,6 +47,9 @@ When the form is submitted, I run a validation on all of the fields to see if an
 
 ## If I had more time
 
+- Hash the credit card number and only store the last four digits 😬
+- Connect this to a real payment processor like Stripe
+- Run this by a designer to check the UX and see what improvements could be made in that realm
 - More test coverage on the frontend
 - More test coverage on the backend (there are some added for the `TransactionsController`. See `spec/controllers/transactions_controller_spec.rb`)
 - Refactor `frontend/src/components/Form/index.js` to reflect a seperation of concerns (pull out the api call, make an input component that can be reusable since they're repeated a lot)
