@@ -35,6 +35,8 @@ When the api receives a `POST` request, it hits the `TransactionsController` whi
 
 You might be asking - why did I include service objects for this tiny app? I kept scaling in mind! If Potion Planet grows to thousands of users, my little rails app might not be able to handle it so I added these services that could one day grow up to fire off async jobs that manage the load on the site.
 
+Also, I anticipated a need for users to want to make more than one purchase at Potion Planet:tm:, so that's why a `User` *has many* `Transaction`s
+
 ## Frontend
 
 The frontend uses React. I didn't have time to use much custom CSS so I used [Materialize](https://materializecss.com/) pretty heavily. I used babel to compile and webpack to bundle.
@@ -50,6 +52,7 @@ When the form is submitted, I run a validation on all of the fields to see if an
 - Hash the credit card number and only store the last four digits 😬
 - Connect this to a real payment processor like Stripe
 - Run this by a designer to check the UX and see what improvements could be made in that realm
+- Allow the user make more than one transaction
 - More test coverage on the frontend
 - More test coverage on the backend (there are some added for the `TransactionsController`. See `spec/controllers/transactions_controller_spec.rb`)
 - Refactor `frontend/src/components/Form/index.js` to reflect a seperation of concerns (pull out the api call, make an input component that can be reusable since they're repeated a lot)
