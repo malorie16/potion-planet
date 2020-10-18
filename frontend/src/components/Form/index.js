@@ -46,7 +46,7 @@ export const Form = () => {
                     if (data.error) {
                         alert(data.error)
                     } else {
-                        setAdjustedTotal("25")
+                        setAdjustedTotal("49.99")
                         alert("Thank you! Your order has been placed!");
                     }
                 })
